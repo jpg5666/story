@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Story App</title>
+
+    <!-- 🔗 Favicon -->
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <!-- 🟩 PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- 🎨 Warna tema status bar (untuk Android/iOS) -->
+    <meta name="theme-color" content="#4CAF50" />
+
+    <!-- 📱 Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+  </head>
+
+  <body>
+    <header>
+      <div class="main-header container">
+        <!-- Disembunyikan di halaman login/register -->
+        <a id="home-link" class="brand-name" href="#/home">Home</a>
+        <nav id="navigation-drawer" class="navigation-drawer">
+          <ul id="nav-list" class="nav-list">
+            <!-- Login/Logout akan diisi melalui JS -->
+          </ul>
+        </nav>
+        <button id="drawer-button" class="drawer-button">☰</button>
+      </div>
+    </header>
+
+    <main id="main"></main>
+
+    <!-- 🛠️ Webpack akan menyuntikkan <script src="bundle.js"> secara otomatis di sini -->
+  </body>
+</html>
