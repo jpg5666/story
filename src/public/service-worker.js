@@ -5,6 +5,8 @@ const urlsToCache = [
   "/manifest.json",
   "/icons/icon-192.png",
   "/icons/icon-512.png",
+  "/app.bundle.js",
+  "/app.css",
 ];
 
 // Cache static assets saat service worker diinstall
